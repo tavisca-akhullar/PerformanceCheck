@@ -1,0 +1,75 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 2 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+BuildScript: c:\users\akhullar\source\repos\PerformanceCheck\PerformanceCheck\bin\Release\e4df85f6-eb2d-4a33-9519-1108659ac5bf.bat
+// ***** Done, took 00:00:03 (3.22 sec)   *****
+// Found 2 benchmarks:
+//   ForVsForEach.For: DefaultJob [value=100]
+//   ForVsForEach.ForEach: DefaultJob [value=100]
+
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)// **************************
+// Benchmark: ForVsForEach.For: DefaultJob [value=100]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: c:\users\akhullar\source\repos\PerformanceCheck\PerformanceCheck\bin\Release\e4df85f6-eb2d-4a33-9519-1108659ac5bf.exe --benchmarkName "ForVSForEach+ForVsForEach.For(value: 100)" --job "Default" --benchmarkId 0 in 
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Framework 4.7.2 (CLR 4.0.30319.42000), 32bit LegacyJIT-v4.7.3056.0
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 296478.47 ns, 296.4785 us/op
+WorkloadJitting  1: 1 op, 374882.99 ns, 374.8830 us/op
+
+OverheadJitting  2: 16 op, 186712.15 ns, 11.6695 us/op
+WorkloadJitting  2: 16 op, 201663.71 ns, 12.6040 us/op
+
+WorkloadPilot    1: 16 op, 4740.74 ns, 296.2961 ns/op
+WorkloadPilot    2: 32 op, 1094.02 ns, 34.1880 ns/op
+WorkloadPilot    3: 64 op, 729.34 ns, 11.3960 ns/op
+WorkloadPilot    4: 128 op, 1823.36 ns, 14.2450 ns/op
+WorkloadPilot    5: 256 op, 1823.36 ns, 7.1225 ns/op
+WorkloadPilot    6: 512 op, 4011.39 ns, 7.8348 ns/op
+WorkloadPilot    7: 1024 op, 5834.75 ns, 5.6980 ns/op
+WorkloadPilot    8: 2048 op, 10575.49 ns, 5.1638 ns/op
+WorkloadPilot    9: 4096 op, 22609.67 ns, 5.5199 ns/op
+WorkloadPilot   10: 8192 op, 88615.34 ns, 10.8173 ns/op
+WorkloadPilot   11: 16384 op, 67829.02 ns, 4.1400 ns/op
+WorkloadPilot   12: 32768 op, 192546.90 ns, 5.8761 ns/op
+WorkloadPilot   13: 65536 op, 373788.97 ns, 5.7036 ns/op
+WorkloadPilot   14: 131072 op, 747942.61 ns, 5.7063 ns/op
+WorkloadPilot   15: 262144 op, 1637742.69 ns, 6.2475 ns/op
+WorkloadPilot   16: 524288 op, 1890095.83 ns, 3.6051 ns/op
+WorkloadPilot   17: 1048576 op, 5206424.50 ns, 4.9652 ns/op
+WorkloadPilot   18: 2097152 op, 9369521.94 ns, 4.4677 ns/op
+WorkloadPilot   19: 4194304 op, 21550666.27 ns, 5.1381 ns/op
+WorkloadPilot   20: 8388608 op, 39374383.02 ns, 4.6938 ns/op
+WorkloadPilot   21: 16777216 op, 86050961.48 ns, 5.1290 ns/op
+WorkloadPilot   22: 33554432 op, 146354609.40 ns, 4.3617 ns/op
+WorkloadPilot   23: 67108864 op, 227010975.54 ns, 3.3827 ns/op
+WorkloadPilot   24: 134217728 op, 382309899.14 ns, 2.8484 ns/op
+WorkloadPilot   25: 268435456 op, 658107810.95 ns, 2.4516 ns/op
+
+OverheadWarmup   1: 268435456 op, 537629609.05 ns, 2.0028 ns/op
+OverheadWarmup   2: 268435456 op, 533283081.51 ns, 1.9866 ns/op
+OverheadWarmup   3: 268435456 op, 669613947.11 ns, 2.4945 ns/op
+OverheadWarmup   4: 268435456 op, 578115148.15 ns, 2.1536 ns/op
+OverheadWarmup   5: 268435456 op, 555644778.68 ns, 2.0699 ns/op
+OverheadWarmup   6: 268435456 op, 531666489.80 ns, 1.9806 ns/op
+OverheadWarmup   7: 268435456 op, 585705434.60 ns, 2.1819 ns/op
+OverheadWarmup   8: 268435456 op, 567230778.04 ns, 2.1131 ns/op
+
+OverheadActual   1: 268435456 op, 584627463.68 ns, 2.1779 ns/op
+OverheadActual   2: 268435456 op, 552576062.41 ns, 2.0585 ns/op
+OverheadActual   3: 268435456 op, 669958197.63 ns, 2.4958 ns/op
+OverheadActual   4: 268435456 op, 651674629.28 ns, 2.4277 ns/op
+OverheadActual   5: 268435456 op, 644158735.96 ns, 2.3997 ns/op
+OverheadActual   6: 268435456 op, 550316918.35 ns, 2.0501 ns/op
+OverheadActual   7: 268435456 op, 601569403.13 ns, 2.2410 ns/op
+OverheadActual   8: 268435456 op, 552907914.08 ns, 2.0597 ns/op
+OverheadActual   9: 268435456 op, 556470031.79 ns, 2.0730 ns/op
+OverheadActual  10: 268435456 op, 565648100.84 ns, 2.1072 ns/op
+OverheadActual  11: 268435456 op, 599490771.79 ns, 2.2333 ns/op
+OverheadActual  12: 268435456 op, 5
